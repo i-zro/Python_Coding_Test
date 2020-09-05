@@ -1,3 +1,42 @@
+s = 	"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+def solution(s):
+    if len(s) == 1:
+        return 1
+    total = len(s) # 문자열 s의 길이
+    length = list() # 압축했을 때 각 슬라이싱 당 압축된 문자의 길이
+    for i in range(1, total//2 + 1): # i : 2개, 3개, ... 슬라이싱 개수 절반이상으로 슬라이싱 하는 것 부터는 의미 없음
+        temp = list() # 2개, 3개, ... 슬라이싱한 문자열을 저장할 리스트
+        surplus = 0 # 슬라이싱하고 남은 문자
+        for j in range(total//i):
+            idx = j*i # 인덱스 슬라이싱 시작점
+            temp.append(s[idx:idx+i])
+            surplus = total%i
+
+        tempStr = "" # 비교할 앞단어
+        lengthStr = 0 # 해당 슬라이싱 시 최소 압축 길이
+        num = 0 # 앞에 붙는 실제 숫자
+        num_str = ""
+        for word in temp: # word : temp 안에 있는 단어
+            if word == tempStr: # 앞단어 반복될 때
+                if num!=0:num += 1
+                else : num=2 #반복이라는게 결국 2번 나왔다는 뜻
+            else:
+                tempStr = word # 앞단어가 바뀜
+                if num!=0:
+                    num_str = str(num); lengthStr += (i + len(num_str))
+                else:
+                    lengthStr += i
+                num=0
+                num_str = ""
+
+        if num!=0:
+            num_str = str(num)
+            lengthStr += len(num_str) + surplus
+        else:
+            lengthStr += surplus
+        length.append(lengthStr)
+    return min(length)
+print(solution(s))
 '''
 문제 설명
 데이터 처리 전문가가 되고 싶은 어피치는 문자열을 압축하는 방법에 대해 공부를 하고 있습니다. 최근에 대량의 데이터 처리를 위한 간단한 비손실 압축 방법에 대해 공부를 하고 있는데, 문자열에서 같은 값이 연속해서 나타나는 것을 그 문자의 개수와 반복되는 값으로 표현하여 더 짧은 문자열로 줄여서 표현하는 알고리즘을 공부하고 있습니다.
@@ -46,6 +85,7 @@ s	result
 이 경우 어떻게 문자열을 잘라도 압축되지 않으므로 가장 짧은 길이는 17이 됩니다.
 '''
 
+'''
 # 이진탐색이 생각남
 def solution(s):
     length = len(s) # s의길이
@@ -79,3 +119,4 @@ def solution(s):
 
 s = "aabbccdd"
 print(solution(s))
+'''
