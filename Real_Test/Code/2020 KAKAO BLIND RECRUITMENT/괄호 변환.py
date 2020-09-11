@@ -100,7 +100,8 @@ def solution(p):
         if check(u):
             string = solution(v)
             # 수행된 결과를 u에 이어붙여 반환
-            return u + string
+            u = u + string
+            return u
         # 4 문자열 u가 올바른 괄호 문자열이 아닌 경우
         else:
             # 4-1
@@ -110,8 +111,8 @@ def solution(p):
             # 4-3
             answer += ")"
             # 4-4
-            u = u[1:]
-            answer += u[::]
+            u = u[1:0]
+            answer += u[::-1]
             # 4-5
             return answer
 
