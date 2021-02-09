@@ -1,4 +1,7 @@
-for dx, dy in (1,0), (-1,0), (0,1), (0,-1):
-    print(dx)
-    print(dy)
-    print("끝")
+n=5
+for i in range(n):
+    print(' ' * i, end='')
+    print('*'*((n*2)-(i*2+1)))
+
+for i in range(n):
+    print(' ' * i + '*' * (2*n-(2*i+1)))
