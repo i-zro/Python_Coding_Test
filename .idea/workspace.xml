@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ac430eef-23f9-4930-b943-da5ee5295bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BFS practice/baek_6186.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baek_2178/2178.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic/1003_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic/1003_second.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic/1003_third.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFS practice/baek_10451.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/temp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +47,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kny84\Desktop\Python_Coding_Test\Baek_1406" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1003_third">
+  <component name="RunManager" selected="Python.baek_10451">
     <configuration name="1003_error" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Coding_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="baek_6186" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="baek_10451" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Coding_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +130,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS practice/baek_6186.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS practice/baek_10451.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.baek_10451" />
         <item itemvalue="Python.1003_third" />
         <item itemvalue="Python.1003_second" />
         <item itemvalue="Python.1003_error" />
         <item itemvalue="Python.temp" />
-        <item itemvalue="Python.baek_6186" />
       </list>
     </recent_temporary>
   </component>
@@ -178,5 +192,27 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="972" height="141" key="GridCell.Tab.0.bottom" timestamp="1613306441693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="972" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613306441693" />
+    <state width="972" height="141" key="GridCell.Tab.0.center" timestamp="1613306441692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="972" height="141" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613306441692" />
+    <state width="972" height="141" key="GridCell.Tab.0.left" timestamp="1613306441692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="972" height="141" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613306441692" />
+    <state width="972" height="141" key="GridCell.Tab.0.right" timestamp="1613306441692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="972" height="141" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613306441692" />
+    <state x="922" y="329" key="SettingsEditor" timestamp="1613102023053">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="329" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613102023053" />
   </component>
 </project>
