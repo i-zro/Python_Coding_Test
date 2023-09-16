@@ -1,3 +1,8 @@
+
+|230916|입출력|python|백준 2558|하|
+
+
+
 # Code 폴더
 
 짠 코드 원본
@@ -22,3 +27,4 @@
 # 재귀
 
 Real_Test>>2020 KAKAO BLIND RECRUITMENT 2
+
